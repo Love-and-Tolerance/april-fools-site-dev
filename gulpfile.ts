@@ -41,7 +41,7 @@ task("clean", () => {
 });
 
 task("web", () => {
-    return src("CNAME")
+    return src(["CNAME", ".nojekyll", ".gitignore"])
         .pipe(dest("dist"));
 });
 
