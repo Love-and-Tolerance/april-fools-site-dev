@@ -11,14 +11,15 @@
         }
     },
     {
-        "name": "PCelestia",
+        "name": "Alexander Liu",
         "role": "Website Maintenance / General Texture Artist",
         "nickname": "_autumn_blaze",
         "avatar": "team/pcelestia.png",
         "social": {
             "discord": "Autumn Blaze#2864",
             "email": "pcelestia@love-tolerance.com",
-            "github": "PCelestia"
+            "twitter": "_autumn_blaze",
+            "github": "autumnblazey"
         }
     },
     {
@@ -98,6 +99,16 @@
             "github": "keupoz",
             "twitter": "keupoz",
             "vk": "keupoz"
+        }
+    },
+    {
+        "name": "Epic Acrylic",
+        "role": "Texture Artist",
+        "nickname": "Epic_Acrylic",
+        "avatar": "team/epicacrylic.png",
+        "social": {
+            "discord": "Epic Acrylic#0202",
+            "twitter": "epicacrylic"
         }
     }
 ]
