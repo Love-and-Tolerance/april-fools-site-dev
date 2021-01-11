@@ -45,7 +45,7 @@ const getIcon = initIcons();
 let DATA: any = {};
 
 task("data", () => {
-    return src("data/**/*.json", { since: lastRun("data") })
+    return src("data/**/*.json5", { since: lastRun("data") })
         .pipe(data("src/templates/**/*.pug", () => DATA, (data) => DATA = data));
 });
 

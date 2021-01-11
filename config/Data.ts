@@ -5,6 +5,7 @@ import PluginError from "plugin-error";
 import { obj } from "through2";
 import touch from "touch";
 import { isVinyl } from "vinyl";
+import JSON5 from "json5";
 
 const PLUGIN_NAME = "gulp-json-data";
 
@@ -19,7 +20,7 @@ export function data(touchPattern: string, getData: () => any, update: (data: an
         if (file.isBuffer()) {
             try {
                 const contents = file.contents.toString(encoding),
-                    value = JSON.parse(contents),
+                    value = JSON5.parse(contents),
                     path = parse(file.relative),
                     json = {} as any;
 

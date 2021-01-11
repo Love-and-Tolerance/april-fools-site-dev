@@ -37,7 +37,7 @@ Now you are ready to run the site! Type `pnpm run dev` to start dev server or `p
 
 ## Data files
 
-Data files are written in JSON format. They are usually used in Pug templates. You can change the files while dev server is running and after a change the site will be automatically rebuilt.
+Data files are written in [JSON5 format](https://json5.org/). They are usually used in Pug templates. You can change the files while dev server is running and after a change the site will be automatically rebuilt.
 
 The data is accessed via `data` Pug local. The `data` object respects ierarchy structure of files. Some files have their own global definition.
 
