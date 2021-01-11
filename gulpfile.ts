@@ -6,7 +6,7 @@ import del from "del";
 import glob from "glob";
 import { dest, lastRun, parallel, series, src, task, watch } from "gulp";
 import gulpIf from "gulp-if";
-import imagemin from "gulp-imagemin";
+import _imagemin from "gulp-imagemin";
 import pug from "gulp-pug";
 import sass from "gulp-sass";
 import sourcemaps from "gulp-sourcemaps";
@@ -17,6 +17,19 @@ import SASS from "sass";
 import { data } from "./config/Data";
 import { initIcons } from "./config/FontAwesome";
 import { markdown } from "./config/Markdown";
+
+const imagemin = () => _imagemin([
+    _imagemin.gifsicle({
+        optimizationLevel: 3
+    }),
+    _imagemin.optipng({
+        optimizationLevel: 7
+    }),
+    _imagemin.svgo(
+        // no optimization level
+        // because its literally just minimising a text file
+    )
+]);
 
 let isProduction = process.env.NODE_ENV === "production";
 
