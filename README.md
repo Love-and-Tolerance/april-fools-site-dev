@@ -47,7 +47,7 @@ Also there can be files and folders with the same name (e.g. `cards.json` and `c
 
 Accessed via `site` Pug local.
 
-```jsonc
+```json5
 {
     // Title pattern for pages. Can be seen in tab name
     "title": "%s - Love & Tolercane",
@@ -73,7 +73,7 @@ Accessed via `site` Pug local.
 
 Use `getMenuList()` to get an array of entry names. Use `getMenuEntry(name)` to get the path of menu entry (must be used for dev server support)
 
-```jsonc
+```json5
 {
     // Paths must end with /
     "Home": "/",
@@ -100,7 +100,7 @@ Pass these cards to `card` or `cards` Pug mixins which are available on every pa
 +cards(data.cards.features, true)
 ```
 
-```jsonc
+```json5
 [
     {
         "figure": "namespace/filename.ext",
@@ -120,7 +120,7 @@ Pass these cards to `contact-card` or `contact-cards` Pug mixins which are avail
 +contact-cards(data.cards.team)
 ```
 
-```jsonc
+```json5
 [
     {
         "name": "Member name",
