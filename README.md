@@ -31,7 +31,7 @@ NPM shouldn't have this issue on Windows.
 
 ### Cloning the repo
 
-Open terminal, go to your projects folder and clone this repo with `git clone git clone https://github.com/Love-and-Tolercane/love-tolercane-site-dev.git`. Go to the downloaded folder and type `pnpm i` to install dependencies.
+Open terminal, go to your projects folder and clone this repo with `git clone https://github.com/Love-and-Tolercane/love-tolercane-site-dev.git`. Go to the downloaded folder and type `pnpm i` to install dependencies.
 
 Now you are ready to run the site! Type `pnpm run dev` to start dev server or `pnpm run build` to build the site to `dist` folder.
 
