@@ -4,8 +4,9 @@
     margin-bottom: $content-gap;
 
     a {
-        background: #eee;
-        border: 1px solid #ddd;
+        background: $background-background-color;
+        // background: #eee;
+        // border: 1px solid #ddd;
         border-radius: 3px;
         display: inline-block;
         margin: 5px;

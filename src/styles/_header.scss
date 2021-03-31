@@ -1,7 +1,7 @@
 @import "variables";
 
 header {
-    background: rgba(white, 0.9);
+    background: $header-background-color;
     box-sizing: border-box;
     font-size: 1.2em;
     font-weight: 700;

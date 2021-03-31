@@ -10,15 +10,15 @@
 }
 
 html {
-    background: whitesmoke;
+    background: $background-background-color;
     scroll-behavior: smooth;
 }
 
 body {
-    background: white;
-    box-shadow: 0 0 16px rgba(black, 0.1);
+    background: $main-background-color;
+    box-shadow: 0 0 16px $box-shadow-color;
     box-sizing: border-box;
-    color: #444;
+    color: $text-color;
     font-family: "Raleway", "Font Awesome 5 Free", "Font Awesome 5 Brands";
     margin: 0 auto;
     padding-top: $menu-height;

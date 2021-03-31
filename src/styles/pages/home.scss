@@ -18,8 +18,8 @@ main {
 }
 
 .did-you-know {
-    background: #404040;
-    color: #eee;
+    background: $did-you-know-background-color;
+    color: $did-you-know-text-color;
     margin: $content-padding (-$content-padding) (-$content-padding);
     padding: $content-padding;
     text-align: center;
