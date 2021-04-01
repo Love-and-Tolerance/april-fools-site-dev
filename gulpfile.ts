@@ -20,10 +20,10 @@ import { markdown } from "./config/Markdown";
 
 const imagemin = () => _imagemin([
     _imagemin.gifsicle({
-        optimizationLevel: 3
+        // optimizationLevel: 3
     }),
     _imagemin.optipng({
-        optimizationLevel: 7
+        // optimizationLevel: 7
     }),
     _imagemin.svgo(
         // no optimization level
