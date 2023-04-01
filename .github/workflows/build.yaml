@@ -1,0 +1,45 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+    - "deploy"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+
+    - name: setup node
+      uses: actions/setup-node@v2.1.4
+      with:
+        node-version: "14"
+
+    - name: install pnpm
+      run: npm i -g pnpm@5.14.3
+
+    - name: cache pnpm store
+      uses: actions/cache@v2.1.3
+      with:
+        path: ~/.pnpm-store
+        key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-
+
+    - name: Install and Build
+      run: |
+        pnpm install --shamefully-hoist
+        pnpm run build
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist
+        CLEAN: true
