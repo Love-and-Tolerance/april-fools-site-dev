@@ -5,7 +5,7 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
     site: "https://april-fools.love-tolerance.com/",
-    base: "./2023",
+    base: "/2023",
 
     integrations: [
         image({
